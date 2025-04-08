@@ -5,7 +5,18 @@ object pepita {
 		energia = energia + comida.energiaQueAporta()
 	}
 	
+	method puedeVolar(distancia) {
+		return energia >= distancia + 10
+	}
+
+	method validarVolar(distancia) {
+		if (self.puedeVolar(distancia)){
+			self.error("no puede volar")
+		}
+	}
+
 	method volar(distancia) {
+		self.validarVolar(distancia)
 		energia = energia - 10 - distancia
 	}
 		
@@ -67,7 +78,11 @@ object roque {
 		ave = _ave
 		cenas = 0
 	}
-	
+
+	method cenas() {
+	  return cenas
+	}
+
 	method alimentar(alimento) {
 		ave.comer(alimento)
 		cenas = cenas + 1
