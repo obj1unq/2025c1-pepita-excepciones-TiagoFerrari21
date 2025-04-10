@@ -40,7 +40,7 @@ Entiende el mensaje *cenas* sin parámetros, el cual devuelve la cantidad de vec
 Las aves cada una tiene sus virtudes y defectos, por lo que a veces no pueden hacer lo que se les pide.
 Pepita y Pepón al querer volar deben tener suficiente energía, si no no pueden cumplir con la responsabilidad que se les pide. 
 Cuando un objeto no puede cumplir con su responsabilidad debe lanzar una excepción.
-  
+
 Se pide 
 * Implementar las validaciones y consultas correspondientes realizando las modificaciones a los objetos ya resueltos para garantizar que un ave solo puede volar bajo las condiciones dadas o lance una excepción. 
 
